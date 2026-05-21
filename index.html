@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Indoor — Indoor Plant Showroom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Boldonse&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">
+      <img src="images/logo/nature%20indoor%20logo.png" alt="Nature Indoor Logo"
+        style="height: 40px; width: auto; max-width: 150px;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="btn-theme-toggle" aria-label="Turn dark mode on" title="Toggle Dark/Light Mode"
+      type="button">
+      <span class="toggle-text">OFF</span>
+      <span class="toggle-track" aria-hidden="true">
+        <span class="toggle-thumb"></span>
+      </span>
+    </button>
+    <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#home" class="mm-link">Home</a>
+    <a href="#about" class="mm-link">About</a>
+    <a href="#collections" class="mm-link">Collections</a>
+    <a href="#gallery" class="mm-link">Gallery</a>
+    <a href="#contact" class="mm-link">Contact</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-botanical"></div> <!--
+    <img src="landpage/frame2.png" alt="Indoor plant showcase" class="hero-frame hero-frame-left">-->
+    <img src="landpage/frame2.png" alt="Indoor plant showcase" class="hero-frame hero-frame-center pop-out-image"> <!--
+    <img src="landpage/frame2.png" alt="Indoor plant showcase" class="hero-frame hero-frame-right"> 
+    <img src="landpage/frame2.png" alt="Indoor plant showcase duplicate" class="hero-frame hero-frame-duplicate"> -->
+    <div class="hero-circle hero-circle-1"></div>
+    <div class="hero-circle hero-circle-2"></div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Indoor Plant Showroom</span>
+      <h1 class="hero-title">Bring <em>Nature</em><br>Inside</h1>
+      <p class="hero-tagline">We bring natural vibes to your favorite places</p>
+
+      <div class="hero-cta-group">
+        <button class="scroll-btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+          <span>Scroll Down</span>
+          <span class="arrow"></span>
+        </button>
+        
+        <button class="find-me-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" aria-label="Find our showroom location" title="Visit us at our showroom">
+          <p class="find-me-btn__text">
+            <span style="--index: 0;">F</span>
+            <span style="--index: 1;">I</span>
+            <span style="--index: 2;">N</span>
+            <span style="--index: 3;">D</span>
+            <span style="--index: 4;"> </span>
+            <span style="--index: 5;">M</span>
+            <span style="--index: 6;">E</span>
+            <span style="--index: 7;"> </span>
+            <span style="--index: 8;">•</span>
+            <span style="--index: 9;">F</span>
+            <span style="--index: 10;">I</span>
+            <span style="--index: 11;">N</span>
+            <span style="--index: 12;">D</span>
+            <span style="--index: 13;"> </span>
+            <span style="--index: 14;">M</span>
+            <span style="--index: 15;">E</span>
+            <span style="--index: 16;"> </span>
+            <span style="--index: 17;">•</span>
+          </p>
+
+          <div class="find-me-btn__circle">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="find-me-btn__icon"
+              width="24"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              width="24"
+              class="find-me-btn__icon find-me-btn__icon--copy"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-stat">
+            <div class="about-stat-num">8+</div>
+            <div class="about-stat-text">Years of expertise</div>
+          </div>
+          <div class="about-img-main"></div>
+          <div class="about-img-accent"></div>
+        </div>
+        <div class="about-text">
+          <span class="section-label reveal">Our Story</span>
+          <h2 class="section-title reveal reveal-delay-1 masked-text boldonse-regular">Where green<br>meets <em>living</em></h2>
+          <div class="section-divider reveal reveal-delay-2"></div>
+          <p class="reveal reveal-delay-2">
+            Verdura was born from a simple belief — that plants don't just decorate spaces, they transform them. Since
+            2016, we've been curating the finest indoor botanicals to bring calm, beauty, and life into homes, offices,
+            and creative spaces.
+          </p>
+          <p class="reveal reveal-delay-3">
+            Our showroom is a sanctuary. Walk in and you'll find yourself surrounded by hundreds of species — each
+            chosen for its character, care level, and ability to thrive indoors. Our team of passionate plant stylists
+            will guide you to the perfect match.
+          </p>
+          <div class="about-pillars reveal reveal-delay-4">
+            <div class="about-pill">
+              <svg viewBox="0 0 14 14" fill="none">
+                <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1" />
+                <path d="M7 4v3l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+              </svg>
+              Eco-Friendly
+            </div>
+            <div class="about-pill">
+              <svg viewBox="0 0 14 14" fill="none">
+                <rect x="2" y="5" width="10" height="7" rx="1" stroke="currentColor" stroke-width="1" />
+                <path d="M5 5V4a2 2 0 014 0v1" stroke="currentColor" stroke-width="1" />
+              </svg>
+              Minimal Living
+            </div>
+            <div class="about-pill">
+              <svg viewBox="0 0 14 14" fill="none">
+                <path d="M7 2C7 2 3 5 3 8.5a4 4 0 008 0C11 5 7 2 7 2z" stroke="currentColor" stroke-width="1" />
+              </svg>
+              Urban Gardening
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COLLECTIONS ─── -->
+  <section id="collections">
+    <div class="container">
+      <div class="collections-header">
+        <div>
+          <span class="section-label reveal">Our Plants</span>
+          <h2 class="section-title reveal reveal-delay-1">Curated<br><em>Collections</em></h2>
+        </div>
+        <div class="section-divider reveal" style="width:80px; align-self:flex-end; margin:0 0 1rem"></div>
+      </div>
+      <div class="collections-grid">
+        <!-- Card 1 -->
+        <div class="plant-card reveal">
+          <div class="plant-card-img">
+            <div class="plant-card-img-bg plant-monstera">
+              <span class="plant-icon">🌿</span>
+            </div>
+            <span class="plant-badge">Air Purifying</span>
+          </div>
+          <div class="plant-card-body">
+            <div class="plant-card-category">Air Purifying Plants</div>
+            <h3 class="plant-card-name">Monstera Deliciosa</h3>
+            <p class="plant-card-desc">Iconic split leaves that filter toxins and create instant tropical drama in any
+              bright room.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="plant-card reveal reveal-delay-1">
+          <div class="plant-card-img">
+            <div class="plant-card-img-bg plant-snake">
+              <span class="plant-icon">🪴</span>
+            </div>
+            <span class="plant-badge">Low Maintenance</span>
+          </div>
+          <div class="plant-card-body">
+            <div class="plant-card-category">Low Maintenance Plants</div>
+            <h3 class="plant-card-name">Snake Plant</h3>
+            <p class="plant-card-desc">Virtually indestructible, thrives on neglect, and purifies the air while you
+              sleep.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="plant-card reveal reveal-delay-2">
+          <div class="plant-card-img">
+            <div class="plant-card-img-bg plant-orchid">
+              <span class="plant-icon">🌸</span>
+            </div>
+            <span class="plant-badge">Decorative</span>
+          </div>
+          <div class="plant-card-body">
+            <div class="plant-card-category">Decorative Plants</div>
+            <h3 class="plant-card-name">Phalaenopsis Orchid</h3>
+            <p class="plant-card-desc">Graceful blooms that elevate any interior — perfect for gifting and statement
+              corners.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="plant-card reveal reveal-delay-1">
+          <div class="plant-card-img">
+            <div class="plant-card-img-bg plant-zz">
+              <span class="plant-icon">🌱</span>
+            </div>
+            <span class="plant-badge">Office Plants</span>
+          </div>
+          <div class="plant-card-body">
+            <div class="plant-card-category">Office Plants</div>
+            <h3 class="plant-card-name">ZZ Plant</h3>
+            <p class="plant-card-desc">Glossy, architectural leaves that thrive under fluorescent lighting — the perfect
+              desk companion.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="plant-card reveal reveal-delay-2">
+          <div class="plant-card-img">
+            <div class="plant-card-img-bg plant-pothos">
+              <span class="plant-icon">🍃</span>
+            </div>
+            <span class="plant-badge">Hanging</span>
+          </div>
+          <div class="plant-card-body">
+            <div class="plant-card-category">Hanging Plants</div>
+            <h3 class="plant-card-name">Golden Pothos</h3>
+            <p class="plant-card-desc">Cascading heart-shaped leaves in rich green & gold — a timeless choice for
+              shelves and hangers.</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="plant-card reveal reveal-delay-3">
+          <div class="plant-card-img">
+            <div class="plant-card-img-bg plant-hanging">
+              <span class="plant-icon">🌺</span>
+            </div>
+            <span class="plant-badge">Decorative</span>
+          </div>
+          <div class="plant-card-body">
+            <div class="plant-card-category">Decorative Plants</div>
+            <h3 class="plant-card-name">Bird of Paradise</h3>
+            <p class="plant-card-desc">A statement plant with enormous paddle leaves — brings resort-style luxury to
+              living spaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section id="services">
+    <div class="container">
+      <span class="section-label reveal">What We Do</span>
+      <h2 class="section-title reveal reveal-delay-1">Our <em>Services</em></h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <div class="services-grid">
+        <div class="service-item reveal">
+          <div class="service-num">01</div>
+          <h3 class="service-title">Indoor Plant Styling</h3>
+          <p class="service-desc">We curate and arrange plants to complement your interior aesthetic, creating living
+            compositions that breathe.</p>
+        </div>
+        <div class="service-item reveal reveal-delay-1">
+          <div class="service-num">02</div>
+          <h3 class="service-title">Office Plant Setup</h3>
+          <p class="service-desc">Transform your workspace with greenery that boosts productivity, creativity, and
+            employee wellbeing.</p>
+        </div>
+        <div class="service-item reveal reveal-delay-2">
+          <div class="service-num">03</div>
+          <h3 class="service-title">Plant Maintenance Guidance</h3>
+          <p class="service-desc">Personalized care schedules, watering plans, and troubleshooting support so your
+            plants always thrive.</p>
+        </div>
+        <div class="service-item reveal reveal-delay-3">
+          <div class="service-num">04</div>
+          <h3 class="service-title">Home Decoration Consultation</h3>
+          <p class="service-desc">A one-on-one consultation where we map your space and design a botanical plan around
+            your lifestyle.</p>
+        </div>
+        <div class="service-item reveal reveal-delay-4">
+          <div class="service-num">05</div>
+          <h3 class="service-title">Custom Plant Arrangements</h3>
+          <p class="service-desc">Bespoke terrariums, bowl gardens, and arrangements crafted to order — perfect for
+            gifts or events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
+  <section id="gallery">
+    <div class="container">
+      <span class="section-label reveal">Visual Stories</span>
+      <h2 class="section-title reveal reveal-delay-1">Our <em>Gallery</em></h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <div class="gallery-masonry">
+        <div class="gallery-item reveal">
+          <div class="gallery-img g1 g-tall">
+            <div class="gallery-img-inner">🌿</div>
+          </div>
+          <div class="gallery-caption">Showroom Interior</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1">
+          <div class="gallery-img g2 g-wide">
+            <div class="gallery-img-inner">🪴</div>
+          </div>
+          <div class="gallery-caption">Plant Closeup</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-img g3 g-sq">
+            <div class="gallery-img-inner">🌱</div>
+          </div>
+          <div class="gallery-caption">Interior Setup</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1">
+          <div class="gallery-img g4 g-wide">
+            <div class="gallery-img-inner">🍃</div>
+          </div>
+          <div class="gallery-caption">Customer Space</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-img g5 g-tall">
+            <div class="gallery-img-inner">🌺</div>
+          </div>
+          <div class="gallery-caption">Living Room</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-3">
+          <div class="gallery-img g6 g-sq">
+            <div class="gallery-img-inner">🌸</div>
+          </div>
+          <div class="gallery-caption">Orchid Collection</div>
+        </div>
+        <div class="gallery-item reveal">
+          <div class="gallery-img g7 g-wide">
+            <div class="gallery-img-inner">🌴</div>
+          </div>
+          <div class="gallery-caption">Office Setup</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1">
+          <div class="gallery-img g8 g-sq">
+            <div class="gallery-img-inner">🪷</div>
+          </div>
+          <div class="gallery-caption">Statement Corner</div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-img g9 g-tall">
+            <div class="gallery-img-inner">🌵</div>
+          </div>
+          <div class="gallery-caption">Desert Collection</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section id="testimonials">
+    <div class="container">
+      <span class="section-label reveal">Client Stories</span>
+      <h2 class="section-title reveal reveal-delay-1">What They <em>Say</em></h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Beautiful collection and incredibly helpful guidance. My living room feels
+            completely transformed. The team took time to understand my space and lifestyle before making any
+            suggestions.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Aisha Fernando</div>
+              <div class="testimonial-role">Interior Decorator, Colombo</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">We got an office plant setup done and the difference in atmosphere is remarkable.
+            Our team loves coming in now. The maintenance plan they provided is simple to follow and every plant is
+            thriving.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name">Rajan Perera</div>
+              <div class="testimonial-role">CEO, Tech Startup</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">The custom terrarium they crafted for my mother's birthday was absolutely
+            stunning. The attention to detail, the selection of plants, the presentation — everything was perfect.
+            Highly recommend!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">N</div>
+            <div>
+              <div class="testimonial-name">Nadia Silva</div>
+              <div class="testimonial-role">Home Stylist, Negombo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label reveal">Get In Touch</span>
+      <h2 class="section-title reveal reveal-delay-1">Visit Our <em>Showroom</em></h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>Step into our showroom and let the plants choose you. We're open 7 days a week and our team is always happy
+            to guide you through our collection, answer care questions, or help plan your space.</p>
+          <a href="https://wa.me/+94771234567" class="whatsapp-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+            Chat on WhatsApp
+          </a>
+          <div class="contact-items">
+            <a class="contact-item" href="tel:+94771234567">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +94 77 123 4567
+            </a>
+            <a class="contact-item" href="mailto:natureindoorlk@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              natureindoorlk@gmail.com
+            </a>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              123 Main Street, Negombo, Sri Lanka
+            </div>
+          </div>
+          <div class="card" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+            <span>Social</span>
+            <a class="social-link" href="#" aria-label="Instagram" title="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a class="social-link" href="https://web.facebook.com/indoorhomedeco" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a class="social-link" href="#" aria-label="Pinterest" title="Pinterest">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+            </a>
+          </div>
+          <div class="contact-map" onclick="window.open('https://maps.google.com','_blank')" role="button"
+            aria-label="Open in Google Maps">
+            <span>📍 &nbsp; View on Google Maps</span>
+          </div>
+        </div>
+
+        <!-- Inquiry Form -->
+        <form class="contact-form reveal reveal-delay-2" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Aisha" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Fernando">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="hello@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+94 77 000 0000">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service">
+              <option value="">Select a service...</option>
+              <option>Indoor Plant Styling</option>
+              <option>Office Plant Setup</option>
+              <option>Plant Maintenance Guidance</option>
+              <option>Home Decoration Consultation</option>
+              <option>Custom Plant Arrangements</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Tell us about your space or what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Inquiry</button>
+          <div id="form-success" style="display:none;color:var(--fern);font-size:0.85rem;margin-top:0.5rem;">
+            ✓ &nbsp;Thank you! We'll be in touch within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-logo">Nature Indoor</div>
+    <div class="footer-copy">© 2026 Nature Indoor, Sri Lanka</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="backend-client.js"></script>
+</body>
+
+</html>

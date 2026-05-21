@@ -1,0 +1,14 @@
+{
+  "name": "nature-indoor-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nature Indoor website with a deployable Node backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
